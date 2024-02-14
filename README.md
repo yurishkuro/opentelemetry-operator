@@ -62,7 +62,7 @@ EOF
 **_WARNING:_** Until the OpenTelemetry Collector format is stable, changes may be required in the above example to remain
 compatible with the latest version of the OpenTelemetry Collector image being referenced.
 
-This will create an OpenTelemetry Collector instance named `simplest`, exposing a `jaeger-grpc` port to consume spans from your instrumented applications and exporting those spans via `debug`, which writes the spans to the console (`stdout`) of the OpenTelemetry Collector instance that receives the span.
+This will create an OpenTelemetry Collector instance named `simplest`, exposing OpenTelemetry OTLP `grpc` and `http` ports to consume spans from your instrumented applications and exporting those spans via `debug`, which writes the spans to the console (`stdout`) of the OpenTelemetry Collector instance that receives the span.
 
 The `config` node holds the `YAML` that should be passed down as-is to the underlying OpenTelemetry Collector instances. Refer to the [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector) documentation for a reference of the possible entries.
 
